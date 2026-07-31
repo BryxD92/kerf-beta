@@ -1,0 +1,35 @@
+{
+  "product": "KERF Workshop Quoter",
+  "channel": "beta",
+  "expiresAt": "2026-10-31",
+  "github": {
+    "owner": "YOUR_GITHUB_USERNAME",
+    "repo": "kerf-beta"
+  },
+  "latest": {
+    "version": "2.0.0-beta.4",
+    "tag": "v2.0.0-beta.4",
+    "releasedAt": "2026-07-31",
+    "file": "KERF-Workshop-Quoter-2.0.0-beta.4-Setup.exe",
+    "sizeMb": 95,
+    "url": "",
+    "notes": [
+      "Custom shop operations in Rates (e.g. embossing) — minutes on the piece",
+      "Sales tax / VAT / IVA on billed total",
+      "Material prices: stainless ≈ 3× mild steel; Ferro cut speeds fixed",
+      "USD defaults · imperial/metric units · DXF inch import"
+    ]
+  },
+  "history": [
+    {
+      "version": "2.0.0-beta.3",
+      "releasedAt": "2026-07-30",
+      "notes": ["Owner perpetual key (private)", "Tax % in Parameters", "Material cost fixes"]
+    },
+    {
+      "version": "2.0.0-beta.2",
+      "releasedAt": "2026-07-29",
+      "notes": ["Units mm / in·ft", "DXF units", "Closed beta keys"]
+    }
+  ]
+}

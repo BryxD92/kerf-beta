@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KERF — Workshop Quoter · Beta</title>
+  <meta name="description" content="KERF beta for fiber laser shops. Download the latest Windows build, activate with your personal key, send feedback." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" href="assets/kerf-mark.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="top">
+    <a class="brand" href="#top" aria-label="KERF home">
+      <img src="assets/kerf-mark.png" alt="" width="36" height="36" />
+      <span>KERF<span class="dot">.</span></span>
+    </a>
+    <nav class="top-nav">
+      <a href="#updates">Updates</a>
+      <a href="#download">Download</a>
+      <a href="#start">Start</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="KERF beta">
+      <div class="hero-visual" aria-hidden="true">
+        <img class="hero-photo" src="assets/hero-laser-cut.jpg" alt="" />
+        <div class="hero-wash"></div>
+      </div>
+      <div class="hero-copy">
+        <p class="brand-lockup">KERF<span>.</span></p>
+        <h1>Quote the cut before the machine does.</h1>
+        <p class="lede">Closed Windows beta for fiber laser shops — DXF in, nest estimate, piece cost, customer PDF.</p>
+        <div class="cta-row">
+          <a class="btn primary" id="btnDownload" href="#download">Download for Windows</a>
+          <a class="btn ghost" href="#start">How to activate</a>
+        </div>
+        <p class="hero-meta" id="heroMeta">Loading latest build…</p>
+      </div>
+    </section>
+
+    <section class="section" id="updates">
+      <div class="section-inner">
+        <h2>What’s new</h2>
+        <p class="section-lede">One place for every tester build. Same personal key — no Dropbox link chase.</p>
+        <div id="latestNotes" class="notes"></div>
+      </div>
+    </section>
+
+    <section class="section alt" id="download">
+      <div class="section-inner">
+        <h2>Download</h2>
+        <p class="section-lede">Windows installer. Install over a previous beta to keep your activation.</p>
+        <div class="download-panel" id="downloadPanel" role="region" aria-label="Latest installer">
+          <div class="dl-main">
+            <div>
+              <p class="dl-label">Latest build</p>
+              <p class="dl-version" id="dlVersion">—</p>
+              <p class="dl-file" id="dlFile">—</p>
+            </div>
+            <a class="btn primary" id="btnDownloadMain" href="#" rel="noopener">Download .exe</a>
+          </div>
+          <p class="dl-hint" id="dlHint"></p>
+        </div>
+        <div class="history" id="history"></div>
+      </div>
+    </section>
+
+    <section class="section" id="start">
+      <div class="section-inner">
+        <h2>Start in three steps</h2>
+        <p class="section-lede">Your personal key arrives in a private message — never post it publicly.</p>
+        <ol class="steps">
+          <li>
+            <span class="step-num" aria-hidden="true">1</span>
+            <div class="step-body">
+              <strong>Install</strong>
+              <p>Run the Windows setup from this page. Keep the default folder unless you know you need otherwise.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">2</span>
+            <div class="step-body">
+              <strong>Activate</strong>
+              <p>Enter the key you received privately. Already activated? Updating usually skips this step.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">3</span>
+            <div class="step-body">
+              <strong>Set shop defaults</strong>
+              <p>Language, currency, units (mm or in/ft), then Rates and materials. Add custom operations if you emboss, powder-coat, or similar.</p>
+            </div>
+          </li>
+        </ol>
+        <p class="expiry" id="expiryLine"></p>
+      </div>
+    </section>
+
+    <section class="section alt" id="feedback">
+      <div class="section-inner narrow">
+        <h2>Feedback</h2>
+        <p class="section-lede">Tell us if quotes match your shop, what breaks, and what you’d need every day.</p>
+        <p class="feedback-line">Reply in the same private channel where you got your key.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot-inner">
+      <span class="brand-mini">KERF<span>.</span></span>
+      <span>Closed beta · not for public redistribution</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

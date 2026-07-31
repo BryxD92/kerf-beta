@@ -7,19 +7,30 @@
     "repo": "kerf-beta"
   },
   "latest": {
-    "version": "2.0.0-beta.4",
-    "tag": "v2.0.0-beta.4",
+    "version": "2.0.0-beta.5",
+    "tag": "v.2.0.0-beta.5",
     "releasedAt": "2026-07-31",
-    "file": "KERF-Workshop-Quoter-2.0.0-beta.4-Setup.exe",
+    "file": "KERF-Workshop-Quoter-2.0.0-beta.5-Setup.exe",
     "sizeMb": 95,
-    "url": "",
+    "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.5/KERF-Workshop-Quoter-2.0.0-beta.5-Setup.exe",
     "notes": [
-      "Custom shop operations in Rates (e.g. embossing) — minutes on the piece",
-      "Sales tax / VAT / IVA on billed total",
-      "USD defaults · imperial/metric units · DXF inch import"
+      "Multi-DXF nesting: import several parts, each with its own quantity",
+      "Type quantities with the keyboard (not only spinner arrows)",
+      "All imported icons appear in quote / piece details · checkbox multi-select",
+      "Prices update after nesting (material uses pieces placed on the sheet)",
+      "Nest canvas: zoom, pan, drag, rotate, undo, marquee, copy/paste"
     ]
   },
   "history": [
+    {
+      "version": "2.0.0-beta.4",
+      "releasedAt": "2026-07-31",
+      "notes": [
+        "Custom shop operations in Rates",
+        "Sales tax / VAT / IVA",
+        "USD defaults · imperial/metric · DXF inch"
+      ]
+    },
     {
       "version": "2.0.0-beta.3",
       "releasedAt": "2026-07-30",

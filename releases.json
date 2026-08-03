@@ -26,7 +26,7 @@
       "Quantity list preserved when nesting is interrupted",
       "Default nest attempts set to 5",
       "Various UI lock / focus fixes",
-      "Windows may flag the unsigned beta as “threat” / Trojan / Wacatac — false positive. See amber warning on the Download page: More info → Run anyway / Ulteriori informazioni → Esegui comunque (do not disable Defender)"
+      "Windows may flag the unsigned beta as 'threat' / Trojan / Wacatac - false positive. See amber warning on the Download page: More info -> Run anyway / Ulteriori informazioni -> Esegui comunque (do not disable Defender)"
     ]
   },
   "history": [
@@ -36,7 +36,7 @@
       "notes": [
         "Multi-DXF nesting: import several parts, each with its own quantity",
         "Type quantities with the keyboard (not only spinner arrows)",
-        "All imported icons appear in quote / piece details · checkbox multi-select",
+        "All imported icons appear in quote / piece details - checkbox multi-select",
         "Prices update after nesting (material uses pieces placed on the sheet)",
         "Nest canvas: zoom, pan, drag, rotate, undo, marquee, copy/paste"
       ]
@@ -47,10 +47,18 @@
       "notes": [
         "Custom shop operations in Rates",
         "Sales tax / VAT / IVA",
-        "USD defaults · imperial/metric · DXF inch"
+        "USD defaults - imperial/metric - DXF inch"
       ]
     },
     {
       "version": "2.0.0-beta.3",
       "releasedAt": "2026-07-30",
-      "notes": ["Owner perpetua
+      "notes": ["Owner perpetual key (private)", "Tax % in Parameters", "Material cost fixes"]
+    },
+    {
+      "version": "2.0.0-beta.2",
+      "releasedAt": "2026-07-29",
+      "notes": ["Units mm / in-ft", "DXF units", "Closed beta keys"]
+    }
+  ]
+}

@@ -59,6 +59,71 @@
       <div class="section-inner">
         <h2>Download</h2>
         <p class="section-lede">Windows installer. Install over a previous beta to keep your activation.</p>
+
+        <aside class="security-banner" id="windowsSecurity" role="note" aria-labelledby="securityBannerTitle">
+          <div class="security-banner-head">
+            <span class="security-banner-icon" aria-hidden="true">!</span>
+            <div>
+              <p class="security-banner-kicker">Important · Importante</p>
+              <h3 class="security-banner-title" id="securityBannerTitle">Windows may say “virus” — it is a false positive</h3>
+              <p class="security-banner-title-it">Windows può segnalare “virus” / Trojan — è un falso positivo</p>
+            </div>
+          </div>
+
+          <div class="security-banner-grid">
+            <div class="security-lang" lang="it">
+              <p class="security-lang-label">Italiano</p>
+              <p>
+                L’installer beta di <strong>KERF non è ancora firmato digitalmente</strong> (il certificato ha un costo; arriverà in seguito).
+                Windows Defender / SmartScreen possono mostrare “minaccia rilevata”, Trojan, <em>Wacatac</em>, o “Windows ha protetto il PC”.
+                <strong>Non è malware</strong> — è un falso positivo tipico degli EXE non firmati in closed beta. KERF è sicuro.
+              </p>
+              <ol class="security-steps">
+                <li>
+                  <strong>SmartScreen</strong> (“Windows ha protetto il PC”):
+                  clicca <em>Ulteriori informazioni</em> → poi <em>Esegui comunque</em>.
+                </li>
+                <li>
+                  <strong>Defender / quarantena</strong>: apri Sicurezza di Windows →
+                  <em>Cronologia protezione</em> → seleziona il file KERF →
+                  <em>Consenti nel dispositivo</em> (o Ripristina).
+                </li>
+              </ol>
+              <p class="security-banner-foot">
+                Non disattivare Windows Defender in modo permanente. Basta consentire solo questo installer KERF.
+              </p>
+            </div>
+
+            <div class="security-lang" lang="en">
+              <p class="security-lang-label">English</p>
+              <p>
+                The KERF beta installer is <strong>not code-signed yet</strong> (signing cert costs money; planned later).
+                Windows Defender / SmartScreen may show “threat detected”, Trojan, <em>Wacatac</em>, or “Windows protected your PC”.
+                <strong>This is not malware</strong> — a false positive on unsigned closed-beta EXEs. KERF is safe.
+              </p>
+              <ol class="security-steps">
+                <li>
+                  <strong>SmartScreen</strong> (“Windows protected your PC”):
+                  click <em>More info</em> → then <em>Run anyway</em>.
+                </li>
+                <li>
+                  <strong>Defender quarantine</strong>: open Windows Security →
+                  <em>Protection history</em> → select the KERF file →
+                  <em>Allow on device</em> (or Restore).
+                </li>
+              </ol>
+              <p class="security-banner-foot">
+                Do not turn Windows Defender off permanently. Only allow this KERF installer.
+              </p>
+            </div>
+          </div>
+
+          <p class="security-banner-why">
+            Why unsigned? Closed beta — Authenticode signing comes after we buy the certificate.
+            <a href="CODE-SIGNING.md">Technical notes</a>
+          </p>
+        </aside>
+
         <div class="download-panel" id="downloadPanel" role="region" aria-label="Latest installer">
           <div class="dl-main">
             <div>
@@ -69,6 +134,10 @@
             <a class="btn primary" id="btnDownloadMain" href="#" rel="noopener">Download .exe</a>
           </div>
           <p class="dl-hint" id="dlHint"></p>
+          <p class="dl-security-reminder">
+            After download: if Windows warns, use <strong>More info → Run anyway</strong>
+            / <strong>Ulteriori informazioni → Esegui comunque</strong> (see box above).
+          </p>
         </div>
         <div class="history" id="history"></div>
       </div>
@@ -83,7 +152,7 @@
             <span class="step-num" aria-hidden="true">1</span>
             <div class="step-body">
               <strong>Install</strong>
-              <p>Run the Windows setup from this page. Keep the default folder unless you know you need otherwise.</p>
+              <p>Run the Windows setup from this page. If Windows warns (SmartScreen / “virus”), follow the amber box under Download — More info → Run anyway. Keep the default folder unless you know you need otherwise.</p>
             </div>
           </li>
           <li>

@@ -7,21 +7,39 @@
     "repo": "kerf-beta"
   },
   "latest": {
-    "version": "2.0.0-beta.5",
-    "tag": "v.2.0.0-beta.5",
-    "releasedAt": "2026-07-31",
-    "file": "KERF-Workshop-Quoter-2.0.0-beta.5-Setup.exe",
+    "version": "2.0.0-beta.6",
+    "tag": "v.2.0.0-beta.6",
+    "releasedAt": "2026-08-03",
+    "file": "KERF-Workshop-Quoter-2.0.0-beta.6-Setup.exe",
     "sizeMb": 95,
-    "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.5/KERF-Workshop-Quoter-2.0.0-beta.5-Setup.exe",
+    "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.6/KERF-Workshop-Quoter-2.0.0-beta.6-Setup.exe",
     "notes": [
-      "Multi-DXF nesting: import several parts, each with its own quantity",
-      "Type quantities with the keyboard (not only spinner arrows)",
-      "All imported icons appear in quote / piece details · checkbox multi-select",
-      "Prices update after nesting (material uses pieces placed on the sheet)",
-      "Nest canvas: zoom, pan, drag, rotate, undo, marquee, copy/paste"
+      "Multi-sheet nesting with sheet pager (Sheet N/M) and per-sheet DXF export",
+      "Remnant packing goal - keep scrap in one contiguous area",
+      "Fine-angle nesting improvements + cover-then-refine (place all parts first, then refine)",
+      "Faster nesting with balanced think time (no multi-hour runs)",
+      "USD materials: density in lb/in3 and price per lb",
+      "Sheet size and nesting controls moved to the DXF tab",
+      "New quote confirm flow + empty quote (no fake 100x100 starter piece)",
+      "Nest progress bar no longer stuck at 99%",
+      "Native confirm dialogs replaced with in-app modal (fixes frozen dropdowns)",
+      "Quantity list preserved when nesting is interrupted",
+      "Default nest attempts set to 5",
+      "Various UI lock / focus fixes"
     ]
   },
   "history": [
+    {
+      "version": "2.0.0-beta.5",
+      "releasedAt": "2026-07-31",
+      "notes": [
+        "Multi-DXF nesting: import several parts, each with its own quantity",
+        "Type quantities with the keyboard (not only spinner arrows)",
+        "All imported icons appear in quote / piece details · checkbox multi-select",
+        "Prices update after nesting (material uses pieces placed on the sheet)",
+        "Nest canvas: zoom, pan, drag, rotate, undo, marquee, copy/paste"
+      ]
+    },
     {
       "version": "2.0.0-beta.4",
       "releasedAt": "2026-07-31",

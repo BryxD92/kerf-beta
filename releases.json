@@ -25,7 +25,8 @@
       "Native confirm dialogs replaced with in-app modal (fixes frozen dropdowns)",
       "Quantity list preserved when nesting is interrupted",
       "Default nest attempts set to 5",
-      "Various UI lock / focus fixes"
+      "Various UI lock / focus fixes",
+      "Windows may flag the unsigned beta as “threat” / Trojan / Wacatac — false positive. See amber warning on the Download page: More info → Run anyway / Ulteriori informazioni → Esegui comunque (do not disable Defender)"
     ]
   },
   "history": [
@@ -52,12 +53,4 @@
     {
       "version": "2.0.0-beta.3",
       "releasedAt": "2026-07-30",
-      "notes": ["Owner perpetual key (private)", "Tax % in Parameters", "Material cost fixes"]
-    },
-    {
-      "version": "2.0.0-beta.2",
-      "releasedAt": "2026-07-29",
-      "notes": ["Units mm / in·ft", "DXF units", "Closed beta keys"]
-    }
-  ]
-}
+      "notes": ["Owner perpetua

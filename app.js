@@ -51,7 +51,7 @@
 
     const hint = $('dlHint');
     if (!url) {
-      hint.textContent = 'Download link not ready yet. Edit docs/releases.json (github.owner, github.repo) and publish a GitHub Release with the .exe attached.';
+      hint.textContent = 'Download link not ready yet. Edit releases.json (github.owner, github.repo) and publish a GitHub Release with the .exe attached.';
     } else {
       hint.textContent = 'Same personal beta key as before. Install over the previous build to keep activation.';
     }
@@ -126,7 +126,11 @@
     .then(render)
     .catch(() => {
       $('heroMeta').textContent = 'Could not load releases.json';
-      $('dlHint').textContent = 'Add docs/releases.json and enable GitHub Pages from the /docs folder.';
+      $('dlHint').textContent = 'Upload a complete releases.json to the kerf-beta repo root (GitHub Pages).';
+      const notesHost = $('latestNotes');
+      if (notesHost) {
+        notesHost.innerHTML = '<p class="section-lede">Could not load release notes (check releases.json is complete and valid JSON).</p>';
+      }
       setDownloadButtons('');
     });
 })();

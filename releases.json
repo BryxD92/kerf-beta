@@ -26,7 +26,7 @@
       "Quantity list preserved when nesting is interrupted",
       "Default nest attempts set to 5",
       "Various UI lock / focus fixes",
-      "Windows may flag the unsigned beta as 'threat' / Trojan / Wacatac - false positive. See amber warning on the Download page: More info -> Run anyway / Ulteriori informazioni -> Esegui comunque (do not disable Defender)"
+      "Unsigned installer: Windows may show a false positive ('threat' / Trojan / Wacatac). See the amber warning on this page — More info → Run anyway (do not disable Defender)"
     ]
   },
   "history": [
@@ -46,7 +46,7 @@
       "releasedAt": "2026-07-31",
       "notes": [
         "Custom shop operations in Rates",
-        "Sales tax / VAT / IVA",
+        "Sales tax / VAT",
         "USD defaults - imperial/metric - DXF inch"
       ]
     },

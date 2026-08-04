@@ -1,35 +1,44 @@
 {
   "product": "KERF Workshop Quoter",
   "channel": "beta",
-  "expiresAt": "2026-10-31",
+  "expiresAt": "2027-01-31",
   "github": {
     "owner": "BryxD92",
     "repo": "kerf-beta"
   },
   "latest": {
-    "version": "2.0.0-beta.6",
-    "tag": "v.2.0.0-beta.6",
-    "releasedAt": "2026-08-03",
-    "file": "KERF-Workshop-Quoter-2.0.0-beta.6-Setup.exe",
+    "version": "2.0.0-beta.7",
+    "tag": "v.2.0.0-beta.7",
+    "releasedAt": "2026-08-04",
+    "file": "KERF-Workshop-Quoter-2.0.0-beta.7-Setup.exe",
     "sizeMb": 95,
-    "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.6/KERF-Workshop-Quoter-2.0.0-beta.6-Setup.exe",
+    "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.7/KERF-Workshop-Quoter-2.0.0-beta.7-Setup.exe",
     "notes": [
-      "Multi-sheet nesting with sheet pager (Sheet N/M) and per-sheet DXF export",
-      "Remnant packing goal - keep scrap in one contiguous area",
-      "Fine-angle nesting improvements + cover-then-refine (place all parts first, then refine)",
-      "Faster nesting with balanced think time (no multi-hour runs)",
-      "USD materials: density in lb/in3 and price per lb",
-      "Sheet size and nesting controls moved to the DXF tab",
-      "New quote confirm flow + empty quote (no fake 100x100 starter piece)",
-      "Nest progress bar no longer stuck at 99%",
-      "Native confirm dialogs replaced with in-app modal (fixes frozen dropdowns)",
-      "Quantity list preserved when nesting is interrupted",
-      "Default nest attempts set to 5",
-      "Various UI lock / focus fixes",
+      "Material cost fix: Excel mode uses sheet ÷ geometric pcs/sheet (nest placed-count no longer inflates mat)",
+      "Costo mat. su fogli reali (bySheets) OFF by default — opt-in to charge whole purchased sheets",
       "Unsigned installer: Windows may show a false positive ('threat' / Trojan / Wacatac). See the amber warning on this page — More info → Run anyway (do not disable Defender)"
     ]
   },
   "history": [
+    {
+      "version": "2.0.0-beta.6",
+      "releasedAt": "2026-08-03",
+      "notes": [
+        "Multi-sheet nesting with sheet pager (Sheet N/M) and per-sheet DXF export",
+        "Remnant packing goal - keep scrap in one contiguous area",
+        "Fine-angle nesting improvements + cover-then-refine (place all parts first, then refine)",
+        "Faster nesting with balanced think time (no multi-hour runs)",
+        "USD materials: density in lb/in3 and price per lb",
+        "Sheet size and nesting controls moved to the DXF tab",
+        "New quote confirm flow + empty quote (no fake 100x100 starter piece)",
+        "Nest progress bar no longer stuck at 99%",
+        "Native confirm dialogs replaced with in-app modal (fixes frozen dropdowns)",
+        "Quantity list preserved when nesting is interrupted",
+        "Default nest attempts set to 5",
+        "Various UI lock / focus fixes",
+        "Unsigned installer: Windows may show a false positive ('threat' / Trojan / Wacatac). See the amber warning on this page — More info → Run anyway (do not disable Defender)"
+      ]
+    },
     {
       "version": "2.0.0-beta.5",
       "releasedAt": "2026-07-31",

@@ -7,19 +7,44 @@
     "repo": "kerf-beta"
   },
   "latest": {
-    "version": "2.0.0-beta.7",
-    "tag": "v.2.0.0-beta.7",
-    "releasedAt": "2026-08-04",
-    "file": "KERF-Workshop-Quoter-2.0.0-beta.7-Setup.exe",
+    "version": "2.0.0-beta.8",
+    "tag": "v.2.0.0-beta.8",
+    "releasedAt": "2026-08-07",
+    "file": "KERF-Workshop-Quoter-2.0.0-beta.8-Setup.exe",
     "sizeMb": 95,
-    "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.7/KERF-Workshop-Quoter-2.0.0-beta.7-Setup.exe",
+    "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.8/KERF-Workshop-Quoter-2.0.0-beta.8-Setup.exe",
     "notes": [
-      "Material cost fix: Excel mode uses sheet ÷ geometric pcs/sheet (nest placed-count no longer inflates mat)",
-      "Costo mat. su fogli reali (bySheets) OFF by default — opt-in to charge whole purchased sheets",
+      "Nest pack start directions — choose where packing begins on the sheet",
+      "Remnant cuts: organic, 90°, or straight edge-to-edge; delete cut lines manually",
+      "Remnant warehouse (Sheet stock): codes, thumbnails, true-shape reuse of leftovers",
+      "True-shape collision on by default; AABB available as a lighter option",
+      "45° rotations plus nesting performance and hole-fill improvements",
+      "Remnant pack goal: compact nests with a clean leftover region",
+      "DXF manual resize for imported parts",
+      "Larger nest preview and draggable tabs",
+      "Nest copy/paste fixed",
+      "Quote estimate grid removed",
+      "Charge purchased sheets (bySheets) off by default — opt in when needed",
+      "Shop operations: hourly or per area (m² / ft² for USD)",
+      "Piece area and nest total area KPIs",
+      "Pre-pass / evaporation in piece extras (speed, gas, pressure)",
+      "Sheet handling charged per sheet used, not per piece",
+      "More currencies including CAD; changing currency converts prices with confirmation",
+      "Gauge tables for USD and CAD",
+      "Suppliers with grade / finish / thickness pricing",
       "Unsigned installer: Windows may show a false positive ('threat' / Trojan / Wacatac). See the amber warning on this page — More info → Run anyway (do not disable Defender)"
     ]
   },
   "history": [
+    {
+      "version": "2.0.0-beta.7",
+      "releasedAt": "2026-08-04",
+      "notes": [
+        "Material cost fix: Excel mode uses sheet ÷ geometric pcs/sheet (nest placed-count no longer inflates mat)",
+        "Costo mat. su fogli reali (bySheets) OFF by default — opt-in to charge whole purchased sheets",
+        "Unsigned installer: Windows may show a false positive ('threat' / Trojan / Wacatac). See the amber warning on this page — More info → Run anyway (do not disable Defender)"
+      ]
+    },
     {
       "version": "2.0.0-beta.6",
       "releasedAt": "2026-08-03",

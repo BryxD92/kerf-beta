@@ -19,20 +19,26 @@
   }
 
   function setDownloadButtons(url) {
-    const ids = ['btnDownload', 'btnDownloadMain'];
-    for (const id of ids) {
-      const el = $(id);
-      if (!el) continue;
-      if (url) {
-        el.href = url;
-        el.rel = 'noopener';
-        el.removeAttribute('aria-disabled');
-        el.classList.remove('is-disabled');
-      } else {
-        el.href = '#download';
-        el.classList.add('is-disabled');
-        el.setAttribute('aria-disabled', 'true');
-      }
+    // Hero CTA only scrolls to #download (banner + real download button below).
+    const hero = $('btnDownload');
+    if (hero) {
+      hero.href = '#download';
+      hero.removeAttribute('rel');
+      hero.removeAttribute('aria-disabled');
+      hero.classList.remove('is-disabled');
+    }
+
+    const el = $('btnDownloadMain');
+    if (!el) return;
+    if (url) {
+      el.href = url;
+      el.rel = 'noopener';
+      el.removeAttribute('aria-disabled');
+      el.classList.remove('is-disabled');
+    } else {
+      el.href = '#download';
+      el.classList.add('is-disabled');
+      el.setAttribute('aria-disabled', 'true');
     }
   }
 

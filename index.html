@@ -30,42 +30,6 @@
   </header>
 
   <main id="top">
-    <aside class="security-banner security-banner--top" id="windowsSecurityTop" role="note" aria-labelledby="securityBannerTitleTop">
-      <div class="security-banner-head">
-        <span class="security-banner-icon" aria-hidden="true">!</span>
-        <div>
-          <p class="security-banner-kicker">Important</p>
-          <h3 class="security-banner-title" id="securityBannerTitleTop">Windows may say “virus” — it is a false positive</h3>
-        </div>
-      </div>
-      <div class="security-banner-body">
-        <p>
-          The KERF beta installer is <strong>not code-signed yet</strong> (signing cert costs money; planned later).
-          Windows Defender / SmartScreen may show “threat detected”, Trojan, <em>Wacatac</em>, or “Windows protected your PC”.
-          <strong>This is not malware</strong> — a false positive on unsigned closed-beta EXEs. KERF is safe.
-        </p>
-        <ol class="security-steps">
-          <li>
-            <strong>SmartScreen</strong> (“Windows protected your PC”):
-            click <em>More info</em> → then <em>Run anyway</em>.
-          </li>
-          <li>
-            <strong>Defender quarantine</strong>: open Windows Security →
-            <em>Protection history</em> → select the KERF file →
-            <em>Allow on device</em> (or Restore).
-          </li>
-        </ol>
-        <p class="security-banner-foot">
-          Do not turn Windows Defender off permanently. Only allow this KERF installer.
-        </p>
-      </div>
-      <p class="security-banner-why">
-        Why unsigned? Closed beta — Authenticode signing comes after we buy the certificate.
-        Same steps again under <a href="#download">Download</a>.
-        <a href="CODE-SIGNING.md">Technical notes</a>
-      </p>
-    </aside>
-
     <section class="hero" aria-label="KERF beta">
       <div class="hero-visual" aria-hidden="true">
         <img class="hero-photo" src="hero-laser-cut.jpg" alt="" />
@@ -138,7 +102,7 @@
               <p class="dl-version" id="dlVersion">—</p>
               <p class="dl-file" id="dlFile">—</p>
             </div>
-            <a class="btn primary" id="btnDownloadMain" href="#" rel="noopener">Download .exe</a>
+            <a class="btn primary" id="btnDownloadMain" href="#" rel="noopener">Download for Windows</a>
           </div>
           <p class="dl-hint" id="dlHint"></p>
           <p class="dl-security-reminder">
@@ -159,7 +123,7 @@
             <span class="step-num" aria-hidden="true">1</span>
             <div class="step-body">
               <strong>Install</strong>
-              <p>Run the Windows setup from this page. If Windows warns (SmartScreen / “virus”), follow the amber box at the top of the page — More info → Run anyway. Keep the default folder unless you know you need otherwise.</p>
+              <p>Run the Windows setup from this page. If Windows warns (SmartScreen / “virus”), follow the amber box under Download — More info → Run anyway. Keep the default folder unless you know you need otherwise.</p>
             </div>
           </li>
           <li>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>KERF — Workshop Quoter · Beta</title>
-  <meta name="description" content="KERF beta for fiber laser shops. Download the latest Windows build, activate with your personal key, send feedback." />
+  <meta name="description" content="KERF beta for fiber laser shops. Download Windows or Mac builds, activate with your personal key, send feedback." />
   <meta name="robots" content="noindex, nofollow" />
   <!-- Required for GitHub project Pages: https://USER.github.io/REPO/ -->
   <base href="/kerf-beta/" />
@@ -38,9 +38,10 @@
       <div class="hero-copy">
         <p class="brand-lockup">KERF<span>.</span></p>
         <h1>Quote the cut before the machine does.</h1>
-        <p class="lede">Closed Windows beta for fiber laser shops — DXF in, nest estimate, piece cost, customer PDF.</p>
+        <p class="lede">Closed beta for fiber laser shops — DXF in, nest estimate, piece cost, customer PDF. Windows and Mac.</p>
         <div class="cta-row">
           <a class="btn primary" id="btnDownload" href="#download">Download for Windows</a>
+          <a class="btn primary" id="btnDownloadMacHero" href="#download">Download for Mac</a>
           <a class="btn ghost" href="#start">How to activate</a>
         </div>
         <p class="hero-meta" id="heroMeta">Loading latest build…</p>
@@ -58,7 +59,7 @@
     <section class="section alt" id="download">
       <div class="section-inner">
         <h2>Download</h2>
-        <p class="section-lede">Windows installer. Install over a previous beta to keep your activation.</p>
+        <p class="section-lede">Windows installer or Mac DMG. Install over a previous beta to keep your activation.</p>
 
         <aside class="security-banner" id="windowsSecurity" role="note" aria-labelledby="securityBannerTitle">
           <div class="security-banner-head">
@@ -95,6 +96,41 @@
           </p>
         </aside>
 
+        <aside class="security-banner" id="macSecurity" role="note" aria-labelledby="macSecurityBannerTitle">
+          <div class="security-banner-head">
+            <span class="security-banner-icon" aria-hidden="true">!</span>
+            <div>
+              <p class="security-banner-kicker">Important · Mac</p>
+              <h3 class="security-banner-title" id="macSecurityBannerTitle">Gatekeeper may block the Mac app — unsigned beta</h3>
+            </div>
+          </div>
+          <div class="security-banner-body">
+            <p>
+              The Mac build is <strong>not notarized / not Developer ID signed</strong> yet.
+              macOS may say the app “can’t be opened because it is from an unidentified developer”.
+              <strong>This is expected for the closed beta</strong> — not malware.
+            </p>
+            <ol class="security-steps">
+              <li>
+                In Finder, <strong>right-click</strong> (or Control-click) the KERF app →
+                <em>Open</em> → confirm <em>Open</em> in the dialog.
+              </li>
+              <li>
+                Or: System Settings → Privacy &amp; Security → scroll to the blocked-app message →
+                <em>Open Anyway</em>.
+              </li>
+              <li>
+                Advanced (if quarantine bit sticks): in Terminal,
+                <code>xattr -cr "/Applications/KERF Workshop Quoter.app"</code>
+                (adjust the path if you keep the app elsewhere).
+              </li>
+            </ol>
+            <p class="security-banner-foot">
+              Current Mac DMG is <strong>Apple Silicon (arm64) only</strong>. Intel Macs need a separate or universal build later.
+            </p>
+          </div>
+        </aside>
+
         <div class="download-panel" id="downloadPanel" role="region" aria-label="Latest installer">
           <div class="dl-main">
             <div>
@@ -102,12 +138,15 @@
               <p class="dl-version" id="dlVersion">—</p>
               <p class="dl-file" id="dlFile">—</p>
             </div>
-            <a class="btn primary" id="btnDownloadMain" href="#" rel="noopener">Download for Windows</a>
+            <div class="dl-actions">
+              <a class="btn primary" id="btnDownloadMain" href="#" rel="noopener">Download for Windows</a>
+              <a class="btn primary" id="btnDownloadMac" href="#" rel="noopener">Download for Mac</a>
+            </div>
           </div>
           <p class="dl-hint" id="dlHint"></p>
           <p class="dl-security-reminder">
-            After download: if Windows warns, use <strong>More info → Run anyway</strong>
-            (see the amber box above).
+            After download: Windows → <strong>More info → Run anyway</strong>;
+            Mac → <strong>right-click → Open</strong> (see amber boxes above).
           </p>
         </div>
         <div class="history" id="history"></div>
@@ -123,7 +162,7 @@
             <span class="step-num" aria-hidden="true">1</span>
             <div class="step-body">
               <strong>Install</strong>
-              <p>Run the Windows setup from this page. If Windows warns (SmartScreen / “virus”), follow the amber box under Download — More info → Run anyway. Keep the default folder unless you know you need otherwise.</p>
+              <p>Download Windows or Mac from this page. Windows: if SmartScreen warns, follow the amber box — More info → Run anyway. Mac: right-click the app → Open (Gatekeeper). Keep the default install location unless you know you need otherwise.</p>
             </div>
           </li>
           <li>

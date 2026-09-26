@@ -299,6 +299,13 @@ a { color: inherit; }
   gap: 18px;
 }
 
+.dl-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
 .dl-label {
   margin: 0 0 4px;
   font-size: 0.75rem;
@@ -423,6 +430,12 @@ a { color: inherit; }
   background: rgba(255, 193, 7, 0.28);
   padding: 0 4px;
   border-radius: 3px;
+}
+
+.security-steps code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.85em;
+  word-break: break-all;
 }
 
 .security-banner-foot {

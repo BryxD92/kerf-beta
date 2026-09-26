@@ -11,6 +11,22 @@
     return `https://github.com/${owner}/${repo}/releases/download/${encodeURIComponent(tag)}/${encodeURIComponent(file)}`;
   }
 
+  function platformDownloadUrl(data, latest, platform) {
+    const plat = latest && latest[platform];
+    if (plat && plat.url && String(plat.url).trim()) return plat.url.trim();
+    if (plat && plat.file) {
+      const owner = data.github && data.github.owner;
+      const repo = data.github && data.github.repo;
+      const tag = plat.tag || latest.tag || (`v${plat.version || latest.version}`);
+      if (owner && owner !== 'YOUR_GITHUB_USERNAME' && repo && plat.file) {
+        return `https://github.com/${owner}/${repo}/releases/download/${encodeURIComponent(tag)}/${encodeURIComponent(plat.file)}`;
+      }
+    }
+    // Backward compatible: top-level latest.url / latest.file = Windows
+    if (platform === 'windows') return releaseDownloadUrl(data, latest);
+    return '';
+  }
+
   function formatDate(iso) {
     if (!iso) return '';
     const d = new Date(iso + (iso.length <= 10 ? 'T12:00:00Z' : ''));
@@ -18,17 +34,7 @@
     return d.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' });
   }
 
-  function setDownloadButtons(url) {
-    // Hero CTA only scrolls to #download (banner + real download button below).
-    const hero = $('btnDownload');
-    if (hero) {
-      hero.href = '#download';
-      hero.removeAttribute('rel');
-      hero.removeAttribute('aria-disabled');
-      hero.classList.remove('is-disabled');
-    }
-
-    const el = $('btnDownloadMain');
+  function wireButton(el, url) {
     if (!el) return;
     if (url) {
       el.href = url;
@@ -42,26 +48,72 @@
     }
   }
 
+  function setDownloadButtons(winUrl, macUrl) {
+    // Hero CTAs scroll to #download (real download buttons below).
+    ['btnDownload', 'btnDownloadMacHero'].forEach((id) => {
+      const hero = $(id);
+      if (!hero) return;
+      hero.href = '#download';
+      hero.removeAttribute('rel');
+      hero.removeAttribute('aria-disabled');
+      hero.classList.remove('is-disabled');
+    });
+
+    wireButton($('btnDownloadMain'), winUrl);
+    wireButton($('btnDownloadMac'), macUrl);
+  }
+
   function render(data) {
     const latest = data.latest || {};
-    const url = releaseDownloadUrl(data, latest);
+    const win = latest.windows || {};
+    const mac = latest.mac || {};
+    const winUrl = platformDownloadUrl(data, latest, 'windows');
+    const macUrl = platformDownloadUrl(data, latest, 'mac');
 
-    $('heroMeta').textContent = latest.version
-      ? `Latest · ${latest.version} · Windows · ~${latest.sizeMb || '?'} MB`
+    const winVer = win.version || latest.version || '';
+    const macVer = mac.version || latest.version || '';
+    const winMb = win.sizeMb != null ? win.sizeMb : latest.sizeMb;
+    const macMb = mac.sizeMb != null ? mac.sizeMb : null;
+    const archNote = mac.arch ? ` · ${mac.arch}` : '';
+
+    const metaBits = [];
+    if (winVer) metaBits.push(`Windows ${winVer}${winMb != null ? ` · ~${winMb} MB` : ''}`);
+    if (macVer) metaBits.push(`Mac ${macVer}${archNote}${macMb != null ? ` · ~${macMb} MB` : ''}`);
+    $('heroMeta').textContent = metaBits.length
+      ? `Latest · ${metaBits.join(' · ')}`
       : 'Latest build coming soon';
 
-    $('dlVersion').textContent = latest.version || '—';
-    $('dlFile').textContent = latest.file
-      ? `${latest.file}${latest.releasedAt ? ' · ' + formatDate(latest.releasedAt) : ''}`
+    $('dlVersion').textContent = latest.version || winVer || '—';
+
+    const fileLines = [];
+    if (win.file || latest.file) {
+      fileLines.push(
+        `Windows: ${win.file || latest.file}` +
+          (win.releasedAt || latest.releasedAt
+            ? ' · ' + formatDate(win.releasedAt || latest.releasedAt)
+            : '')
+      );
+    }
+    if (mac.file) {
+      fileLines.push(
+        `Mac${archNote}: ${mac.file}` +
+          (mac.releasedAt || latest.releasedAt
+            ? ' · ' + formatDate(mac.releasedAt || latest.releasedAt)
+            : '')
+      );
+    }
+    $('dlFile').textContent = fileLines.length
+      ? fileLines.join('\n')
       : 'Upload a GitHub Release, then set github.owner / github.repo in releases.json';
+    $('dlFile').style.whiteSpace = fileLines.length > 1 ? 'pre-line' : '';
 
     const hint = $('dlHint');
-    if (!url) {
-      hint.textContent = 'Download link not ready yet. Edit releases.json (github.owner, github.repo) and publish a GitHub Release with the .exe attached.';
+    if (!winUrl && !macUrl) {
+      hint.textContent = 'Download link not ready yet. Edit releases.json (github.owner, github.repo) and publish a GitHub Release with the installer attached.';
     } else {
-      hint.textContent = 'Same personal beta key as before. Install over the previous build to keep activation.';
+      hint.textContent = 'Same personal beta key as before. Install over the previous build to keep activation. Mac build is Apple Silicon (arm64) only for now.';
     }
-    setDownloadButtons(url);
+    setDownloadButtons(winUrl, macUrl);
 
     const notesHost = $('latestNotes');
     notesHost.innerHTML = '';
@@ -137,6 +189,6 @@
       if (notesHost) {
         notesHost.innerHTML = '<p class="section-lede">Could not load release notes (check releases.json is complete and valid JSON).</p>';
       }
-      setDownloadButtons('');
+      setDownloadButtons('', '');
     });
 })();

@@ -107,22 +107,23 @@
           <div class="security-banner-body">
             <p>
               The Mac build is <strong>not notarized / not Developer ID signed</strong> yet.
-              macOS may say the app “can’t be opened because it is from an unidentified developer”.
-              <strong>This is expected for the closed beta</strong> — not malware.
+              macOS may say the app is <strong>“damaged and can’t be opened”</strong> or
+              “from an unidentified developer”.
+              <strong>This is Gatekeeper on an unsigned beta — the download is not actually corrupt.</strong>
             </p>
             <ol class="security-steps">
               <li>
-                In Finder, <strong>right-click</strong> (or Control-click) the KERF app →
-                <em>Open</em> → confirm <em>Open</em> in the dialog.
-              </li>
-              <li>
-                Or: System Settings → Privacy &amp; Security → scroll to the blocked-app message →
-                <em>Open Anyway</em>.
-              </li>
-              <li>
-                Advanced (if quarantine bit sticks): in Terminal,
+                Drag KERF to Applications, then in Terminal run:
                 <code>xattr -cr "/Applications/KERF Workshop Quoter.app"</code>
-                (adjust the path if you keep the app elsewhere).
+                and open the app again.
+              </li>
+              <li>
+                Or in Finder: <strong>right-click</strong> the app →
+                <em>Open</em> → confirm <em>Open</em>.
+              </li>
+              <li>
+                Or: System Settings → Privacy &amp; Security →
+                <em>Open Anyway</em>.
               </li>
             </ol>
             <p class="security-banner-foot">

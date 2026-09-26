@@ -38,27 +38,22 @@
     if (!el) return;
     if (url) {
       el.href = url;
-      el.rel = 'noopener';
+      el.target = '_blank';
+      el.rel = 'noopener noreferrer';
       el.removeAttribute('aria-disabled');
       el.classList.remove('is-disabled');
     } else {
       el.href = '#download';
+      el.removeAttribute('target');
       el.classList.add('is-disabled');
       el.setAttribute('aria-disabled', 'true');
     }
   }
 
   function setDownloadButtons(winUrl, macUrl) {
-    // Hero CTAs scroll to #download (real download buttons below).
-    ['btnDownload', 'btnDownloadMacHero'].forEach((id) => {
-      const hero = $(id);
-      if (!hero) return;
-      hero.href = '#download';
-      hero.removeAttribute('rel');
-      hero.removeAttribute('aria-disabled');
-      hero.classList.remove('is-disabled');
-    });
-
+    // Hero + panel: real download URLs (not #download scroll-only stubs).
+    wireButton($('btnDownload'), winUrl);
+    wireButton($('btnDownloadMacHero'), macUrl);
     wireButton($('btnDownloadMain'), winUrl);
     wireButton($('btnDownloadMac'), macUrl);
   }

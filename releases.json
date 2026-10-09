@@ -7,18 +7,19 @@
     "repo": "kerf-beta"
   },
   "latest": {
-    "version": "2.0.0-beta.10",
-    "tag": "v.2.0.0-beta.10",
-    "releasedAt": "2026-09-30",
-    "file": "KERF-Workshop-Quoter-2.0.0-beta.8-Setup.exe",
-    "sizeMb": 95,
-    "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.8/KERF-Workshop-Quoter-2.0.0-beta.8-Setup.exe",
+    "version": "2.0.0-beta.11",
+    "tag": "v.2.0.0-beta.11",
+    "releasedAt": "2026-10-09",
+    "file": "KERF-Workshop-Quoter-2.0.0-beta.11-Setup.exe",
+    "sizeMb": 96,
+    "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.11/KERF-Workshop-Quoter-2.0.0-beta.11-Setup.exe",
     "windows": {
-      "version": "2.0.0-beta.8",
-      "tag": "v.2.0.0-beta.8",
-      "file": "KERF-Workshop-Quoter-2.0.0-beta.8-Setup.exe",
-      "sizeMb": 95,
-      "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.8/KERF-Workshop-Quoter-2.0.0-beta.8-Setup.exe"
+      "version": "2.0.0-beta.11",
+      "tag": "v.2.0.0-beta.11",
+      "releasedAt": "2026-10-09",
+      "file": "KERF-Workshop-Quoter-2.0.0-beta.11-Setup.exe",
+      "sizeMb": 96,
+      "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.11/KERF-Workshop-Quoter-2.0.0-beta.11-Setup.exe"
     },
     "mac": {
       "version": "2.0.0-beta.10",
@@ -31,30 +32,18 @@
       "zipUrl": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.10/KERF-Workshop-Quoter-2.0.0-beta.10-arm64.zip"
     },
     "notes": [
-      "New: commercial CRM — customer cards with pipeline (lead → quote → won/lost); confirmed orders move into Order management",
-      "macOS Apple Silicon (arm64) DMG",
-      "Swiss QR invoices via Node swissqrbill (no Python required on Mac)",
-      "Shared .kerf.json Salva/Carica between Mac and Windows",
-      "Nest pack start directions — choose where packing begins on the sheet",
-      "Remnant cuts: organic, 90°, or straight edge-to-edge; delete cut lines manually",
-      "Remnant warehouse (Sheet stock): codes, thumbnails, true-shape reuse of leftovers",
-      "True-shape collision on by default; AABB available as a lighter option",
-      "45° rotations plus nesting performance and hole-fill improvements",
-      "DXF manual resize for imported parts",
-      "Shop operations: hourly or per area (m² / ft² for USD)",
+      "Windows 2.0.0-beta.11. Mac download stays 2.0.0-beta.10",
+      "Orders (Gestionale) inside KERF, saved in the same .kerf.json file",
+      "Invoices keep the approved layout; Swiss QR stays at the bottom of its page",
+      "Settings: invoice layout sandbox. The current invoice stays the default until you change it",
+      "Statistics: add an order to that week's details (VSD / GI). The client name goes in the Client field",
+      "Removing that statistic line clears it on the order. Deleting the order removes it from the statistic",
+      "The Statistics tab no longer opens the details window by itself",
+      "Order screens in Italian, English, German and French",
       "Unsigned installers: Windows SmartScreen / Mac Gatekeeper may warn — see amber boxes on this page (More info → Run anyway / right-click Open)"
     ]
   },
   "history": [
-    {
-      "version": "2.0.0-beta.9 (Mac)",
-      "releasedAt": "2026-09-26",
-      "notes": [
-        "First macOS Apple Silicon (arm64) build",
-        "Swiss QR invoices via Node swissqrbill",
-        "Shared .kerf.json Salva/Carica between Mac and Windows"
-      ]
-    },
     {
       "version": "2.0.0-beta.8",
       "releasedAt": "2026-08-07",

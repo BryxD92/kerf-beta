@@ -1,25 +1,25 @@
 {
   "product": "KERF Workshop Quoter",
   "channel": "beta",
-  "expiresAt": "2027-01-31",
+  "expiresAt": "2026-12-31",
   "github": {
     "owner": "BryxD92",
     "repo": "kerf-beta"
   },
   "latest": {
-    "version": "2.0.0-beta.11",
-    "tag": "v.2.0.0-beta.11",
+    "version": "2.0.0-beta.12",
+    "tag": "v.2.0.0-beta.12",
     "releasedAt": "2026-10-09",
-    "file": "KERF-Workshop-Quoter-2.0.0-beta.11-Setup.exe",
+    "file": "KERF-Workshop-Quoter-2.0.0-beta.12-Setup.exe",
     "sizeMb": 96,
-    "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.11/KERF-Workshop-Quoter-2.0.0-beta.11-Setup.exe",
+    "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.12/KERF-Workshop-Quoter-2.0.0-beta.12-Setup.exe",
     "windows": {
-      "version": "2.0.0-beta.11",
-      "tag": "v.2.0.0-beta.11",
+      "version": "2.0.0-beta.12",
+      "tag": "v.2.0.0-beta.12",
       "releasedAt": "2026-10-09",
-      "file": "KERF-Workshop-Quoter-2.0.0-beta.11-Setup.exe",
+      "file": "KERF-Workshop-Quoter-2.0.0-beta.12-Setup.exe",
       "sizeMb": 96,
-      "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.11/KERF-Workshop-Quoter-2.0.0-beta.11-Setup.exe"
+      "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.12/KERF-Workshop-Quoter-2.0.0-beta.12-Setup.exe"
     },
     "mac": {
       "version": "2.0.0-beta.10",
@@ -32,18 +32,26 @@
       "zipUrl": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.10/KERF-Workshop-Quoter-2.0.0-beta.10-arm64.zip"
     },
     "notes": [
-      "Windows 2.0.0-beta.11. Mac download stays 2.0.0-beta.10",
-      "Orders (Gestionale) inside KERF, saved in the same .kerf.json file",
-      "Invoices keep the approved layout; Swiss QR stays at the bottom of its page",
-      "Settings: invoice layout sandbox. The current invoice stays the default until you change it",
-      "Statistics: add an order to that week's details (VSD / GI). The client name goes in the Client field",
-      "Removing that statistic line clears it on the order. Deleting the order removes it from the statistic",
-      "The Statistics tab no longer opens the details window by itself",
-      "Order screens in Italian, English, German and French",
+      "Windows 2.0.0-beta.12. Mac download stays 2.0.0-beta.10",
+      "Full workshop management: orders, CRM, automatic quotes and invoices, saved in the same .kerf.json file",
+      "This beta license runs until 31 December 2026 — it is not perpetual",
       "Unsigned installers: Windows SmartScreen / Mac Gatekeeper may warn — see amber boxes on this page (More info → Run anyway / right-click Open)"
     ]
   },
   "history": [
+    {
+      "version": "2.0.0-beta.11",
+      "releasedAt": "2026-10-09",
+      "notes": [
+        "Orders (Gestionale) inside KERF, saved in the same .kerf.json file",
+        "Invoices keep the approved layout; Swiss QR stays at the bottom of its page",
+        "Settings: invoice layout sandbox. The current invoice stays the default until you change it",
+        "Statistics: add an order to that week's details (VSD / GI). The client name goes in the Client field",
+        "Removing that statistic line clears it on the order. Deleting the order removes it from the statistic",
+        "The Statistics tab no longer opens the details window by itself",
+        "Order screens in Italian, English, German and French"
+      ]
+    },
     {
       "version": "2.0.0-beta.8",
       "releasedAt": "2026-08-07",

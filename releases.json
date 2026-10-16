@@ -7,19 +7,19 @@
     "repo": "kerf-beta"
   },
   "latest": {
-    "version": "2.0.0-beta.12",
-    "tag": "v.2.0.0-beta.12",
-    "releasedAt": "2026-10-09",
-    "file": "KERF-Workshop-Quoter-2.0.0-beta.12-Setup.exe",
+    "version": "2.0.0-beta.13",
+    "tag": "v.2.0.0-beta.13",
+    "releasedAt": "2026-10-16",
+    "file": "KERF-Workshop-Quoter-2.0.0-beta.13-Setup.exe",
     "sizeMb": 96,
-    "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.12/KERF-Workshop-Quoter-2.0.0-beta.12-Setup.exe",
+    "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.13/KERF-Workshop-Quoter-2.0.0-beta.13-Setup.exe",
     "windows": {
-      "version": "2.0.0-beta.12",
-      "tag": "v.2.0.0-beta.12",
-      "releasedAt": "2026-10-09",
-      "file": "KERF-Workshop-Quoter-2.0.0-beta.12-Setup.exe",
+      "version": "2.0.0-beta.13",
+      "tag": "v.2.0.0-beta.13",
+      "releasedAt": "2026-10-16",
+      "file": "KERF-Workshop-Quoter-2.0.0-beta.13-Setup.exe",
       "sizeMb": 96,
-      "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.12/KERF-Workshop-Quoter-2.0.0-beta.12-Setup.exe"
+      "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.13/KERF-Workshop-Quoter-2.0.0-beta.13-Setup.exe"
     },
     "mac": {
       "version": "2.0.0-beta.10",
@@ -32,13 +32,22 @@
       "zipUrl": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.10/KERF-Workshop-Quoter-2.0.0-beta.10-arm64.zip"
     },
     "notes": [
-      "Windows 2.0.0-beta.12. Mac download stays 2.0.0-beta.10",
-      "Full workshop management: orders, CRM, automatic quotes and invoices, saved in the same .kerf.json file",
+      "Windows 2.0.0-beta.13. Mac download stays 2.0.0-beta.10",
+      "DXF import splits a drawing with several closed plates into separate pieces, each with its own icon. Holes stay on the plate.",
+      "Uscite (Payables) tab next to Statistics: supplier bills to pay and paid, scan/photo/PDF attachment you can open, reminder that rings on the PC, PDF text fills supplier, invoice number, total, due date 30 days from invoice date, reminder 5 days before, and the invoice line details in the note.",
+      "Cutting-speed table (Listino e parametri): nozzle, gas, and pressure on each material and thickness. Piece detail fills them when that material and thickness is chosen, and they stay editable on the piece.",
       "This beta license runs until 31 December 2026 — it is not perpetual",
       "Unsigned installers: Windows SmartScreen / Mac Gatekeeper may warn — see amber boxes on this page (More info → Run anyway / right-click Open)"
     ]
   },
   "history": [
+    {
+      "version": "2.0.0-beta.12",
+      "releasedAt": "2026-10-09",
+      "notes": [
+        "Full workshop management: orders, CRM, automatic quotes and invoices, saved in the same .kerf.json file"
+      ]
+    },
     {
       "version": "2.0.0-beta.11",
       "releasedAt": "2026-10-09",

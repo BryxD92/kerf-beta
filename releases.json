@@ -7,19 +7,19 @@
     "repo": "kerf-beta"
   },
   "latest": {
-    "version": "2.0.0-beta.13",
-    "tag": "v.2.0.0-beta.13",
-    "releasedAt": "2026-10-16",
-    "file": "KERF-Workshop-Quoter-2.0.0-beta.13-Setup.exe",
-    "sizeMb": 96,
-    "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.13/KERF-Workshop-Quoter-2.0.0-beta.13-Setup.exe",
+    "version": "2.0.0-beta.14",
+    "tag": "v.2.0.0-beta.14",
+    "releasedAt": "2026-10-28",
+    "file": "KERF-Workshop-Quoter-2.0.0-beta.14-Setup.exe",
+    "sizeMb": 98,
+    "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.14/KERF-Workshop-Quoter-2.0.0-beta.14-Setup.exe",
     "windows": {
-      "version": "2.0.0-beta.13",
-      "tag": "v.2.0.0-beta.13",
-      "releasedAt": "2026-10-16",
-      "file": "KERF-Workshop-Quoter-2.0.0-beta.13-Setup.exe",
-      "sizeMb": 96,
-      "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.13/KERF-Workshop-Quoter-2.0.0-beta.13-Setup.exe"
+      "version": "2.0.0-beta.14",
+      "tag": "v.2.0.0-beta.14",
+      "releasedAt": "2026-10-28",
+      "file": "KERF-Workshop-Quoter-2.0.0-beta.14-Setup.exe",
+      "sizeMb": 98,
+      "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.14/KERF-Workshop-Quoter-2.0.0-beta.14-Setup.exe"
     },
     "mac": {
       "version": "2.0.0-beta.10",
@@ -32,7 +32,8 @@
       "zipUrl": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.10/KERF-Workshop-Quoter-2.0.0-beta.10-arm64.zip"
     },
     "notes": [
-      "Windows 2.0.0-beta.13. Mac download stays 2.0.0-beta.10",
+      "Windows 2.0.0-beta.14. Mac download stays 2.0.0-beta.10",
+      "Settings, Preferences: optional Start KERF when Windows starts. It stays off until you turn it on.",
       "DXF import splits a drawing with several closed plates into separate pieces, each with its own icon. Holes stay on the plate.",
       "Uscite (Payables) tab next to Statistics: supplier bills to pay and paid, scan/photo/PDF attachment you can open, reminder that rings on the PC, PDF text fills supplier, invoice number, total, due date 30 days from invoice date, reminder 5 days before, and the invoice line details in the note.",
       "Cutting-speed table (Listino e parametri): nozzle, gas, and pressure on each material and thickness. Piece detail fills them when that material and thickness is chosen, and they stay editable on the piece.",
@@ -41,6 +42,15 @@
     ]
   },
   "history": [
+    {
+      "version": "2.0.0-beta.13",
+      "releasedAt": "2026-10-16",
+      "notes": [
+        "DXF import splits a drawing with several closed plates into separate pieces, each with its own icon. Holes stay on the plate.",
+        "Uscite (Payables) tab next to Statistics: supplier bills to pay and paid, with a reminder on the PC",
+        "Cutting-speed table: nozzle, gas, and pressure on each material and thickness"
+      ]
+    },
     {
       "version": "2.0.0-beta.12",
       "releasedAt": "2026-10-09",

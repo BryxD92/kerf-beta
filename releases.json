@@ -7,19 +7,19 @@
     "repo": "kerf-beta"
   },
   "latest": {
-    "version": "2.0.0-beta.15",
-    "tag": "v.2.0.0-beta.15",
-    "releasedAt": "2026-11-23",
-    "file": "KERF-Workshop-Quoter-2.0.0-beta.15-Setup.exe",
+    "version": "2.0.0-beta.16",
+    "tag": "v.2.0.0-beta.16",
+    "releasedAt": "2026-11-24",
+    "file": "KERF-Workshop-Quoter-2.0.0-beta.16-Setup.exe",
     "sizeMb": 98,
-    "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.15/KERF-Workshop-Quoter-2.0.0-beta.15-Setup.exe",
+    "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.16/KERF-Workshop-Quoter-2.0.0-beta.16-Setup.exe",
     "windows": {
-      "version": "2.0.0-beta.15",
-      "tag": "v.2.0.0-beta.15",
-      "releasedAt": "2026-11-23",
-      "file": "KERF-Workshop-Quoter-2.0.0-beta.15-Setup.exe",
+      "version": "2.0.0-beta.16",
+      "tag": "v.2.0.0-beta.16",
+      "releasedAt": "2026-11-24",
+      "file": "KERF-Workshop-Quoter-2.0.0-beta.16-Setup.exe",
       "sizeMb": 98,
-      "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.15/KERF-Workshop-Quoter-2.0.0-beta.15-Setup.exe"
+      "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.16/KERF-Workshop-Quoter-2.0.0-beta.16-Setup.exe"
     },
     "mac": {
       "version": "2.0.0-beta.10",
@@ -32,7 +32,8 @@
       "zipUrl": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.10/KERF-Workshop-Quoter-2.0.0-beta.10-arm64.zip"
     },
     "notes": [
-      "Windows 2.0.0-beta.15. Mac download stays 2.0.0-beta.10",
+      "Windows 2.0.0-beta.16 — KERF icon on installer, shortcuts and taskbar (not the Electron atom). Mac download stays 2.0.0-beta.10",
+      "After install: unpin leftover Electron KERF from the taskbar. Quotes and settings stay in %APPDATA%\\KERF Workshop Quoter",
       "Manual line items (voci a mano): type description, quantity and unit price — billed exactly as typed",
       "Manual-only quotes: totals are the typed prices. No silent office or prep minutes added",
       "Combined Save in the top bar writes one .kerf.json (quoter + workshop management)",
@@ -44,6 +45,16 @@
     ]
   },
   "history": [
+    {
+      "version": "2.0.0-beta.15",
+      "releasedAt": "2026-11-23",
+      "notes": [
+        "Windows 2.0.0-beta.15. Mac download stays 2.0.0-beta.10",
+        "Manual line items (voci a mano): type description, quantity and unit price — billed exactly as typed",
+        "Manual-only quotes: totals are the typed prices. No silent office or prep minutes added",
+        "Combined Save in the top bar writes one .kerf.json (quoter + workshop management)"
+      ]
+    },
     {
       "version": "2.0.0-beta.14",
       "releasedAt": "2026-10-28",

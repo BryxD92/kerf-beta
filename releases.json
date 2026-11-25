@@ -7,19 +7,19 @@
     "repo": "kerf-beta"
   },
   "latest": {
-    "version": "2.0.0-beta.16",
-    "tag": "v.2.0.0-beta.16",
-    "releasedAt": "2026-11-24",
-    "file": "KERF-Workshop-Quoter-2.0.0-beta.16-Setup.exe",
+    "version": "2.0.0-beta.17",
+    "tag": "v.2.0.0-beta.17",
+    "releasedAt": "2026-11-25",
+    "file": "KERF-Workshop-Quoter-2.0.0-beta.17-Setup.exe",
     "sizeMb": 98,
-    "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.16/KERF-Workshop-Quoter-2.0.0-beta.16-Setup.exe",
+    "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.17/KERF-Workshop-Quoter-2.0.0-beta.17-Setup.exe",
     "windows": {
-      "version": "2.0.0-beta.16",
-      "tag": "v.2.0.0-beta.16",
-      "releasedAt": "2026-11-24",
-      "file": "KERF-Workshop-Quoter-2.0.0-beta.16-Setup.exe",
+      "version": "2.0.0-beta.17",
+      "tag": "v.2.0.0-beta.17",
+      "releasedAt": "2026-11-25",
+      "file": "KERF-Workshop-Quoter-2.0.0-beta.17-Setup.exe",
       "sizeMb": 98,
-      "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.16/KERF-Workshop-Quoter-2.0.0-beta.16-Setup.exe"
+      "url": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.17/KERF-Workshop-Quoter-2.0.0-beta.17-Setup.exe"
     },
     "mac": {
       "version": "2.0.0-beta.10",
@@ -32,8 +32,8 @@
       "zipUrl": "https://github.com/BryxD92/kerf-beta/releases/download/v.2.0.0-beta.10/KERF-Workshop-Quoter-2.0.0-beta.10-arm64.zip"
     },
     "notes": [
-      "Windows 2.0.0-beta.16 — KERF icon on installer, shortcuts and taskbar (not the Electron atom). Mac download stays 2.0.0-beta.10",
-      "After install: unpin leftover Electron KERF from the taskbar. Quotes and settings stay in %APPDATA%\\KERF Workshop Quoter",
+      "Windows 2.0.0-beta.17 — Statistics Fatturato pie: floating window, drag and resize; the stats bar stays visible. Mac download stays 2.0.0-beta.10",
+      "KERF icon on installer, shortcuts and taskbar (not the Electron atom). After install: unpin leftover Electron KERF from the taskbar. Quotes and settings stay in %APPDATA%\\KERF Workshop Quoter",
       "Manual line items (voci a mano): type description, quantity and unit price — billed exactly as typed",
       "Manual-only quotes: totals are the typed prices. No silent office or prep minutes added",
       "Combined Save in the top bar writes one .kerf.json (quoter + workshop management)",
@@ -45,6 +45,14 @@
     ]
   },
   "history": [
+    {
+      "version": "2.0.0-beta.16",
+      "releasedAt": "2026-11-24",
+      "notes": [
+        "Windows 2.0.0-beta.16 — KERF icon on installer, shortcuts and taskbar (not the Electron atom). Mac download stays 2.0.0-beta.10",
+        "After install: unpin leftover Electron KERF from the taskbar. Quotes and settings stay in %APPDATA%\\KERF Workshop Quoter"
+      ]
+    },
     {
       "version": "2.0.0-beta.15",
       "releasedAt": "2026-11-23",
